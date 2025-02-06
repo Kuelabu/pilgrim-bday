@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Pilgrim Birthday Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Time to Save the Day!</h1>
+        <p>Help Abu Pilgrim defeat the evil Cigorzilla to deliver your message!</p>
+        <div id="game">
+            <div id="scott"></div>
+            <div id="enemy"></div>
+            <!-- HP Bar for the enemy -->
+            <div id="hpBar">
+                <div id="enemyHP"></div>
+            </div>
+        </div>
+
+        <!-- YOU WON! Message -->
+        <p id="wonMessage" class="hidden">YOU WON!</p>
+
+        <!-- Happy Birthday Message -->
+        <p id="message" class="hidden">🎉 Happy Birthday, Abu! You're awesome! 🎉</p>
+    </div>
+
+    <!-- Click to Start -->
+    <div id="startMessage">Strike Now, Press Space!</div>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="backgroundMusic" src="bg.mp3" loop autoplay></audio>
+    <audio id="attackSound" src="punch.mp3" preload="auto"></audio>
+    <audio id="victorySound" src="win.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
